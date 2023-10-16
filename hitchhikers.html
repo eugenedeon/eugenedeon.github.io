@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <title>Eugene d'Eon - Hitchhiker's Guide to Multiple Scattering</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=no" />
+    <link rel="stylesheet" href="style.css" type="text/css" media="screen" />
+    <style type="text/css" media="screen">
+        #header {
+            background-color: #1f1f1f;
+        }
+
+        #mainNav ul ul {
+            background-color: #1f1f1f;
+        }
+
+        blockquote,
+        address {
+            border-left: 5px solid #1e73be;
+        }
+
+        #filterNav .selected,
+        #filterNav a.selected:hover {
+            background-color: #1e73be;
+        }
+
+        #content .project.small .title span {
+            background-color: #1e73be !important;
+        }
+
+        .flex-direction-nav li a {
+            background-color: #1e73be !important;
+        }
+
+        .posts .post .date {
+            background-color: #1e73be !important;
+        }
+
+        #googleMap {
+            height: 350px;
+        }
+
+        a {
+            color: #4da7ca;
+        }
+
+        a:hover {
+            color: #4290ae;
+        }
+
+        .button,
+        #searchsubmit,
+        input[type="submit"] {
+            background-color: #757575 !important;
+        }
+    </style>
+    <style type="text/css" id="custom-background-css">
+        body.custom-background {
+            background-color: #1f1f1f;
+        }
+    </style>
+</head>
+
+<body class="project-template-default single single-project postid-535 custom-background chrome ">
+
+    <div id="container">
+        <div id="header">
+            <div class="top">
+                <div class="surround">
+                    <div class="inside clearfix">
+                        <div id="logo">
+                            <h1 class="logo"><a href="http://www.eugenedeon.com"><img src="logo.png"
+                                        alt="Eugene d&#039;Eon" style="height: 100px; width: auto;" /></a></h1>
+                            <h1 class="name">Eugene d&#039;Eon</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="wrap">
+            <div id="middle" class="clearfix">
+
+                <div id="pageHead">
+                    <h1>A Hitchhiker&#8217;s Guide to Multiple Scattering</h1>
+                </div>
+
+                <div id="content" class="full">
+
+                    <div class="project clearfix">
+                        
+                        <p>In this free e-book we provide a collection of deterministic and Monte-Carlo solutions to
+                            multiple-scattering problems in linear transport theory. Over 2000 references to literature
+                            containing derivations and related work are provided to help the reader discover further
+                            detail. Reference Monte Carlo code, solutions and Mathematica worksheets comparing the
+                            deterministic solutions to Monte Carlo are provided on github. We also include sections on:
+                        </p>
+                        <ul>
+                            <li>Fredholm and Wiener-Hopf integral equations / pseudo problems / H-functions</li>
+                            <li>Non-classical transport in stochastic (non-exponential) media</li>
+                            <li>Stationary point processes, Renewal processes, Cox processes</li>
+                        </ul>
+                        <h3>Book &#8211; 2022 release v0.3.2 (pdf)</h3>
+                        <p>New results for transport in stochastic media (1D rod), sampling procedures for Draine and
+                            Cornette-Shanks phase functions, and additional corrections.</p>
+                        <ul>
+                            <li><a
+                                    href="https://drive.google.com/file/d/1xIU8YB-R6iS2JHanA9v9P-3WbmqALxfe/view?usp=share_link">Version 0.3.2 &#8211; Nov 24, 2022 &#8211; Graphics notation</a></li>
+                            <li><a
+                                    href="https://drive.google.com/file/d/1XvLWYICs5KiAwfNWJRhkKtY0gtZsCf4_/view?usp=share_link">Version 0.3.2 &#8211; Nov 24, 2022 &#8211; Optics notation</a></li>
+                            <li><a
+                                    href="https://drive.google.com/file/d/1j7Os-KdHPOQRL6_snFNDi9q-8inu_4a-/view?usp=share_link">Version 0.3.2 &#8211; Nov 24, 2022 &#8211; Neutron Transport notation</a></li>
+                        </ul>
+                        <h3>Book &#8211; 2021 release v0.3.0.1 (pdf)</h3>
+                        <p>New in this release: the same book is available in three different notations (\sigma_t,
+                            \mu_t, and \Sigma_t, respectively, plus a few other changes):</p>
+                        <ul>
+                            <li><a
+                                    href="https://drive.google.com/file/d/1tyyJRjiWDVXs9JeFTTv7YHdI7VUoCctr/view?usp=sharing">Version 0.3.0.1 &#8211; Dec 12, 2021 &#8211; Graphics notation</a></li>
+                            <li><a
+                                    href="https://drive.google.com/file/d/1JXND_83NhfAaXxe2RSwdQLWNJpIjo4r6/view?usp=sharing">Version 0.3.0.1 &#8211; Dec 12, 2021 &#8211; Optics notation</a></li>
+                            <li><a
+                                    href="https://drive.google.com/file/d/1txYdStjPJ65C1iCTSgAADPQ69FIHqj94/view?usp=sharing">Version 0.3.0.1 &#8211; Dec 12, 2021 &#8211; Neutron Transport notation</a></li>
+                        </ul>
+                        <h3>Code</h3>
+                        <p><a href="https://github.com/eugenedeon/hitchhikersscatter">Github repo</a></p>
+                        <p>For each of the major problems we provide C++ code that produces Monte Carlo reference
+                            output. The deterministic solutions are all implemented and cross-checked against Monte
+                            Carlo in Mathematica worksheets, which you can download and use to interactively explore the
+                            various simulations. Each Mathematica worksheet is also saved as a PDF (convenient if you
+                            don&#8217;t have Mathematica).</p>
+                        <h3>Previous versions (pdf)</h3>
+                        <ul>
+                            <li><a
+                                    href="https://drive.google.com/file/d/10n-WxoNR_SWdWtvOKP7JoFDjTDIDiJv5/view?usp=sharing">Version 0.3 &#8211; Nov 25, 2021 &#8211; Graphics notation</a></li>
+                            <li><a
+                                    href="https://drive.google.com/file/d/1swzFT9QnDdQCCxvG_5T_k-qC0q3syxNO/view?usp=sharing">Version 0.3 &#8211; Nov 25, 2021 &#8211; Optics notation</a></li>
+                            <li><a
+                                    href="https://drive.google.com/file/d/1rV4u_l1kur-AZVs0XtPbY7WLPHxuRv2F/view?usp=sharing">Version 0.3 &#8211; Nov 25, 2021 &#8211; Neutron Transport notation</a></li>
+                            <li><a href="http://www.eugenedeon.com/wp-content/uploads/2016/09/hitchhikers_v0.1.3.pdf">Version
+                                    0.1.3 &#8211; Sep 3, 2016 &#8211; Latest release</a></li>
+                            <li><a href="http://www.eugenedeon.com/wp-content/uploads/2016/07/hitchhikers_v0.1.pdf">Version
+                                    0.1 &#8211; July 24, 2016 &#8211; Initial release</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+
+        <div class="main">
+            <div class="inside clearfix">
+
+            </div><!-- end footer inside-->
+        </div><!-- end footer main -->
+
+        <div class="secondary">
+            <div class="inside clearfix">
+                <div class="left">
+                    <p>&copy; 2023 <a href="http://www.eugenedeon.com"><strong>Eugene d&#039;Eon</strong></a> All Rights
+                        Reserved.</p>
+                </div>
+
+                <div class="right">
+                    <div style="width: 100%; overflow: hidden;">
+                        <div style="width: 37px; height: 40px; float: right; vertical-align:middle;"><a
+                                href="http://scholar.google.co.nz/citations?user=eGYe5bIAAAAJ"><img
+                                    src="http://www.eugenedeon.com/wp-content/uploads/2014/02/scholar32.png" /></a>
+                        </div>
+                        <div style="width: 68px; line-height:32px; float: right; vertical-align:middle;">
+                            <p>Scholar: </p>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- end footer inside-->
+        </div><!-- end footer secondary-->
+    </div><!-- end footer -->
+    </div><!-- end container -->
+
+</body>
+
+</html>
