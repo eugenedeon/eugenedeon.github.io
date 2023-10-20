@@ -449,11 +449,23 @@ a.action {
 	text-align: center;	
 }
 
-#logo {		
+/* #logo {		
 	display: inline-block;	
 	margin: 0px 0 0 0;	
 	float: left;	
 	padding: 0;
+} */
+
+#logo {
+    display: flex;          /* Convert the container into a flex container */
+    flex-direction: column; /* Stack child items vertically */
+    align-items: center;    /* Center items vertically */
+    justify-content: center;/* Center items horizontally */
+    text-align: center;     /* Ensure text within items is centered */
+}
+
+#logo img {
+    max-width: 100%; /* Ensure the image doesn't overflow the container if it's too large */
 }
 
 #logo h1 {
