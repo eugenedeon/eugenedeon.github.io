@@ -2559,3 +2559,138 @@ body.custom-background {
 #projects .sectionHead {
     margin-top: 3mm;
 }
+
+/* Technical triage for the static site pages.
+   These rules override the inherited WordPress theme where it causes
+   accessibility or mobile overflow problems. */
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+html {
+	-webkit-text-size-adjust: 100%;
+	text-size-adjust: 100%;
+}
+
+body {
+	overflow-x: hidden;
+}
+
+#wrap,
+.inside,
+#content,
+#content.full,
+#projects,
+.project {
+	max-width: 100%;
+	min-width: 0;
+}
+
+#middle {
+	max-width: 62em;
+	min-width: 0;
+	width: 100%;
+}
+
+#middle .inside,
+#content.full,
+.project {
+	overflow-wrap: anywhere;
+}
+
+#middle .inside > hr {
+	clear: both;
+	border: 0;
+	border-top: 1px solid #dfdfde;
+	margin: 14px 0;
+}
+
+#middle .inside > div[style*="float:left"] {
+	width: 80px !important;
+	height: 80px !important;
+	margin: 0 14px 12px 0 !important;
+}
+
+#middle .inside > div[style*="float:left"] img {
+	width: 80px;
+	height: 80px;
+	object-fit: cover;
+}
+
+#middle .inside > div:not([style*="float:left"]) {
+	min-width: 0;
+}
+
+#logo img {
+	height: 100px;
+	width: auto;
+}
+
+#footer .secondary .inside {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 1rem;
+}
+
+#footer .secondary .inside::before,
+#footer .secondary .inside::after {
+	content: none;
+	display: none;
+}
+
+#footer .secondary .left,
+#footer .secondary .right {
+	float: none;
+}
+
+#footer .secondary .right > div {
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	gap: .45rem;
+	width: auto !important;
+	overflow: visible !important;
+}
+
+#footer .secondary .right > div > div {
+	float: none !important;
+	width: auto !important;
+	height: auto !important;
+	line-height: 1 !important;
+}
+
+#footer .secondary .right img {
+	width: 32px;
+	height: 32px;
+}
+
+@media only screen and (max-width: 700px) {
+	html {
+		-webkit-text-size-adjust: 100%;
+		text-size-adjust: 100%;
+	}
+
+	#wrap {
+		padding-left: clamp(14px, 5vw, 20px);
+		padding-right: clamp(14px, 5vw, 20px);
+	}
+
+	#middle .inside > div[style*="float:left"] {
+		width: 64px !important;
+		height: 64px !important;
+		margin-right: 12px !important;
+	}
+
+	#middle .inside > div[style*="float:left"] img {
+		width: 64px !important;
+		height: 64px !important;
+	}
+
+	#footer .secondary .inside {
+		flex-direction: column;
+		align-items: center;
+	}
+}
