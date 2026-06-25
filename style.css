@@ -317,6 +317,57 @@ img {
 	letter-spacing: .02em;
 }
 
+@media (min-width: 900px) and (hover: hover) and (pointer: fine) {
+	body {
+		font-size: 15px;
+	}
+
+	.publication {
+		grid-template-columns: 83px minmax(0, 1fr);
+		min-height: 83px;
+	}
+
+	.publication-thumb img {
+		width: 83px;
+		height: 83px;
+	}
+
+	.book-publication {
+		min-height: 124px;
+	}
+
+	.book-publication .publication-thumb img {
+		height: 124px;
+	}
+
+	.site-name {
+		font-size: 21px;
+	}
+
+	.site-role {
+		font-size: 15px;
+	}
+
+	.section-title,
+	.year,
+	.book-page h3 {
+		font-size: 18px;
+	}
+
+	.pub-action,
+	.pub-action a {
+		font-size: 12px;
+	}
+
+	.book-head h1 {
+		font-size: 24px;
+	}
+
+	.site-footer p {
+		font-size: 13px;
+	}
+}
+
 @media (max-width: 700px) {
 	.site-header-inner {
 		flex-wrap: wrap;
